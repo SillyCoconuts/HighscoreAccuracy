@@ -14,7 +14,7 @@ public static class Utils
 {
     public static string FormatDecimals<T>(this T _number) where T : struct, IComparable, IComparable<T>, IConvertible, IEquatable<T>, IFormattable
     {
-        return string.Format(new NumberFormatInfo() { NumberDecimalDigits = (int)Plugin.decimals.Value }, "{0:F}", _number);
+        return string.Format(new NumberFormatInfo() { NumberDecimalDigits = 35 }, "{0:F}", _number);
     }
 
     public static string ScoreLetter(float num) =>
