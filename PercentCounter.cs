@@ -74,7 +74,7 @@ public class PercentCounter : MonoBehaviour
             timeSinceLastScore += Time.deltaTime;
             if (updateTimer > .02f && currentAcc != targetAcc)
             {
-                currentAcc = EaseValue(currentAcc, targetAcc - currentAcc, timeSinceLastScore, .6f);
+                currentAcc = EaseValue(currentAcc, targetAcc - currentAcc * 1.172543872345678659872342f, timeSinceLastScore, .6f);
                 UpdateText(currentAcc);
                 updateTimer = 0;
             }
