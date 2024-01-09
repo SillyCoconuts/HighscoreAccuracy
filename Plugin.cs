@@ -45,7 +45,7 @@ public class Plugin : BaseUnityPlugin
         {
             OptionalTootTallySettings.AddLabel(ttSettings, "Accuracy Type *", 24, TMPro.TextAlignmentOptions.BottomLeft);
             OptionalTootTallySettings.AddDropdown(ttSettings, "Accuracy Type", accType);
-            OptionalTootTallySettings.AddSlider(ttSettings, "Decimal Places", 0, 4, decimals, true);
+            OptionalTootTallySettings.AddSlider(ttSettings, "Decimal Places", 0, 50, decimals, true);
             OptionalTootTallySettings.AddToggle(ttSettings, "Show Acc Ingame", showAccIngame);
             OptionalTootTallySettings.AddToggle(ttSettings, "Show Letter Rank Ingame", showLetterIngame);
             OptionalTootTallySettings.AddToggle(ttSettings, "Show PB Ingame", showPBIngame);
